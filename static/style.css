@@ -49,6 +49,10 @@ footer, h2 {
 	font-size: x-large;
 }
 
+footer {
+	clear: both;
+}
+
 a:visited, a:hover, a:active, span {
 	color: var(--sec);
 }
