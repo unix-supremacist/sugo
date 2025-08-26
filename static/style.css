@@ -50,7 +50,7 @@ footer, h2 {
 }
 
 footer {
-	clear: both;
+	clear: both ;
 }
 
 a:visited, a:hover, a:active, span {
@@ -63,7 +63,6 @@ nav, header {
 }
 
 img {
-	display: block;
 	margin: auto;
 	max-width: 100%;
 	height: auto;
