@@ -29,6 +29,7 @@
 {{ block "footer" . }}
 <footer>
 	<a href="{{ .Site.BaseURL }}">{{ .Site.BaseURL }}</a>
+	{{< tagcloud >}}
 	{{- if .Param "showrss" }}<br><br><a href="/index.xml"><img src="/rss.svg" style="max-height:1.5em" alt="RSS Feed" title="Subscribe via RSS for updates."></a>{{ end }}
 	{{- if .Param "showx" }}<a href="{{ .Site.Params.x }}"><img src="/x.svg" style="max-height:1.5em" alt="X" title="X"></a>{{ end }}
 	{{- if .Param "showyt" }}<a href="{{ .Site.Params.yt }}"><img src="/yt.svg" style="max-height:1.5em" alt="Youtube" title="Youtube"></a>{{ end }}
