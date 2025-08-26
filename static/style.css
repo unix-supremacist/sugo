@@ -1,25 +1,90 @@
+:root {
+	--bg: #282828;
+	--nav: #202020;
+	--gray: #85888C;
+	--main: #56b9ff;
+	--sec: #a0f4ff;
+}
+
+header, ul, li, header a {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
 body {
-	font-family: sans-serif ;
-	background: #110000 ;
-	color: #ccc ;
+	background-color: var(--bg);
+	color: var(--gray);
+}
+
+a {
+	text-decoration: none;
+}
+
+ul {
+	list-style: none;
+}
+
+p, b {
+	color: #a89984;
+}
+
+kbd {
+	background-color: black;
+}
+
+a:link, a, h1, h2, h3, li {
+	color: var(--main);
+}
+
+h1 {
+	font-size: xx-large;
+}
+
+footer, h1 {
+	text-align: center;
+}
+
+footer, h2 {
+	font-size: x-large;
+}
+
+a:visited, a:hover, a:active, span {
+	color: var(--sec);
+}
+
+nav, header {
+	background-color: var(--nav);
+	width: 100%;
+}
+
+img {
+	display: block;
+	margin: auto;
+	max-width: 100%;
+	height: auto;
+	max-height: 225px;
+}
+
+section, h1 {
+	max-width: 1024px;
+	margin: auto;
+}
+
+nav {
+	max-height: 0;
+	transition: max-height .5s ease-out;
+}
+
+header {
+	box-shadow: 1px 1px 5px 0px var(--gray);
+	position: sticky;
+	top: 0;
 }
 
 main {
 	max-width: 800px ;
 	margin: auto ;
-}
-
-img {
-	max-width: 100% ;
-}
-
-header h1 {
-	text-align: center ;
-}
-
-footer {
-	text-align: center ;
-	clear: both ;
 }
 
 /* For TAGLIST.HTML */

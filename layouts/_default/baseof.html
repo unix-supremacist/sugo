@@ -30,6 +30,9 @@
 <footer>
 	<a href="{{ .Site.BaseURL }}">{{ .Site.BaseURL }}</a>
 	{{- if .Param "showrss" }}<br><br><a href="/index.xml"><img src="/rss.svg" style="max-height:1.5em" alt="RSS Feed" title="Subscribe via RSS for updates."></a>{{ end }}
+	{{- if .Param "showx" }}<br><br><a href="{{ .Params.x }}"><img src="/x.svg" style="max-height:1.5em" alt="X" title="X"></a>{{ end }}
+	{{- if .Param "showyt" }}<br><br><a href="{{ .Params.yt }}"><img src="/yt.svg" style="max-height:1.5em" alt="Youtube" title="Youtube"></a>{{ end }}
+	{{- if .Param "showgh" }}<br><br><a href="{{ .Params.gh }}"><img src="/gh.svg" style="max-height:1.5em" alt="Github" title="Github"></a>{{ end }}
 </footer>
 {{ end }}
 </body>
